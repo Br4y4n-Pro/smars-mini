@@ -1,0 +1,32 @@
+E        +    where [('KCG', 100), ('KCG', 100), ('KCG', 100), ('KCG', 100), ('KCG', 100), ('KCG', 100), ...] = <smars_mini.antes.router.Enrutador object at 0x000002A5A63681A0>.enviadas
+
+tests\test_regresion.py:21: AssertionError
+________________ test_cluster_con_un_nodo_sin_actualizar_antes ________________
+
+    @pytest.mark.antes
+    def test_cluster_con_un_nodo_sin_actualizar_antes():
+        nodos = [despues.Enrutador("nodo-%d" % i) for i in range(1, NODOS)]
+        nodos.append(antes.Enrutador("nodo-8"))
+        cluster = ClusterAntes(nodos)
+        for _ in range(ORDENES):
+            cluster.enrutar("KCG", CANTIDAD)
+>       assert cluster.ordenes_hijas == HIJAS_ESPERADAS
+E       assert 5035 == 40
+E        +  where 5035 = <smars_mini.antes.cluster.Cluster object at 0x000002A5A6369160>.ordenes_hijas
+
+tests\test_regresion.py:31: AssertionError
+_____________ test_no_queda_funcionalidad_obsoleta_expuesta_antes _____________
+
+    @pytest.mark.antes
+    def test_no_queda_funcionalidad_obsoleta_expuesta_antes():
+>       assert not hasattr(antes.Enrutador, "_power_peg")
+E       AssertionError: assert not True
+E        +  where True = hasattr(<class 'smars_mini.antes.router.Enrutador'>, '_power_peg')
+E        +    where <class 'smars_mini.antes.router.Enrutador'> = antes.Enrutador
+
+tests\test_regresion.py:36: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_regresion.py::test_una_orden_genera_solo_las_hijas_necesarias_antes
+FAILED tests/test_regresion.py::test_cluster_con_un_nodo_sin_actualizar_antes
+FAILED tests/test_regresion.py::test_no_queda_funcionalidad_obsoleta_expuesta_antes
+3 failed, 5 deselected in 0.09s

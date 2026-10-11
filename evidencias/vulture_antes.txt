@@ -1,0 +1,4 @@
+smars_mini\antes\config.py:10: unused variable 'TOKEN_OPERACION' (60% confidence)
+smars_mini\antes\router.py:3: unused import 'math' (90% confidence)
+smars_mini\antes\router.py:5: unused import 'TOKEN_OPERACION' (90% confidence)
+smars_mini\antes\router.py:46: unreachable code after 'return' (100% confidence)

@@ -1,0 +1,4 @@
+smars_mini\antes\router.py:3:8: F401 [*] `math` imported but unused
+smars_mini\antes\router.py:8:5: F401 [*] `smars_mini.antes.config.TOKEN_OPERACION` imported but unused
+Found 2 errors.
+[*] 2 fixable with the `--fix` option.

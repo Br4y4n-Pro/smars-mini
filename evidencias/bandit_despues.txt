@@ -1,0 +1,8 @@
+	Total issues (by severity):
+		Low: 0
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Low: 0
+		Medium: 0
+		High: 0

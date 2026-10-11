@@ -1,0 +1,12 @@
+************* Module smars_mini.antes.cluster
+smars_mini\antes\cluster.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
+smars_mini\antes\cluster.py:18:4: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module smars_mini.antes.router
+smars_mini\antes\router.py:46:8: W0101: Unreachable code (unreachable)
+smars_mini\antes\router.py:13:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+smars_mini\antes\router.py:3:0: W0611: Unused import math (unused-import)
+smars_mini\antes\router.py:5:0: W0611: Unused TOKEN_OPERACION imported from smars_mini.antes.config (unused-import)
+
+-----------------------------------
+Your code has been rated at 8.57/10
+

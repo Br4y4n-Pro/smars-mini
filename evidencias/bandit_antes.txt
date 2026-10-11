@@ -1,0 +1,11 @@
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'demo-token-no-real-0000'
+   Severity: Low   Confidence: Medium
+   Location: smars_mini/antes\config.py:10:18
+	Total issues (by severity):
+		Low: 1
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Low: 0
+		Medium: 1
+		High: 0

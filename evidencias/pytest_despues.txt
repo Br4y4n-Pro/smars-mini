@@ -1,0 +1,13 @@
+.....                                                                    [100%]
+=============================== tests coverage ================================
+_______________ coverage: platform win32, python 3.13.9-final-0 _______________
+
+Name                             Stmts   Miss  Cover   Missing
+--------------------------------------------------------------
+smars_mini\despues\__init__.py       0      0   100%
+smars_mini\despues\cluster.py       17      0   100%
+smars_mini\despues\config.py         5      0   100%
+smars_mini\despues\router.py        19      1    95%   21
+--------------------------------------------------------------
+TOTAL                               41      1    98%
+5 passed, 3 deselected in 0.07s

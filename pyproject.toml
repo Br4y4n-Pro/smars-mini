@@ -1,0 +1,18 @@
+[project]
+name = "smars-mini"
+version = "1.0.0"
+description = "Banco de pruebas que reproduce el incidente de Knight Capital (2012)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+markers = [
+    "antes: pruebas sobre el codigo con los defectos del caso",
+    "despues: pruebas sobre el codigo corregido",
+]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C90", "N", "UP", "SIM", "ARG"]
